@@ -1,0 +1,28 @@
+{
+  "name": "oftype",
+  "version": "0.0.1",
+  "description": "A JavaScript module for checking variable runtime type",
+  "main": "oftype.js",
+  "scripts": {
+    "test": "mocha test/oftype-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liushuping/oftype"
+  },
+  "keywords": [
+    "JavaScript",
+    "Type",
+    "Check",
+    "Node"
+  ],
+  "author": "Shuping LIU",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liushuping/oftype/issues"
+  },
+  "homepage": "https://github.com/liushuping/oftype",
+  "devDependencies": {
+    "ddt": "0.0.3"
+  }
+}
