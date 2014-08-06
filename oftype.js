@@ -1,7 +1,10 @@
 function oftype(val, type) {
-    if (type === undefined || type === null ||
-	val === undefined || val === null) {
+    if (type === undefined || val === undefined) {
 	return type === val;
+
+    } else if (val === null) {
+	return type === null || 
+	       oftype.nullAsObject && type === Object;
 
     } else if (type === Number) {
 	if (oftype.primitiveObject) {

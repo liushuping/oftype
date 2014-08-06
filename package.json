@@ -4,7 +4,7 @@
   "description": "A JavaScript module for checking variable runtime type",
   "main": "oftype.js",
   "scripts": {
-    "test": "mocha test/oftype-test.js"
+    "test": "mocha test/"
   },
   "repository": {
     "type": "git",
