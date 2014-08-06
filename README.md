@@ -55,9 +55,9 @@ oftype(value, type, options);
 
 * `options` is optional and has below hash values:
 
- ** `nullAsObject`: treat `null` value as `Object` type, so with this option testing `null` against `Object` type returns `true`. Default value of this option is `false`.
+ * `nullAsObject`: treat `null` value as `Object` type, so with this option testing `null` against `Object` type returns `true`. Default value of this option is `false`.
 
- ** `primitiveObject`: treat primitive object as primitive type. for example, testing `new Number(1)` against Number will return `false` when this option is set to `false`; but will return `true` when this option is set to `true`.
+ * `primitiveObject`: treat primitive object as primitive type. for example, testing `new Number(1)` against Number will return `false` when this option is set to `false`; but will return `true` when this option is set to `true`.
 
 ## Test
 Make sure `mocha` is installed globally
