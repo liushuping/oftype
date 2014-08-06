@@ -13,7 +13,9 @@ var config = {
     
     validate: function(expected, actual) {
 	return expected == actual;
-    }
+    },
+
+    groupName: 'Test group 2'
 };
 
 oftype.nullAsObject = true;

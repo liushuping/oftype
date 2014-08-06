@@ -54,7 +54,9 @@ var config = {
     
     validate: function(expected, actual) {
 	return expected == actual;
-    }
+    },
+
+    groupName: 'Test group 1'	
 };
 
 function Obj() {
