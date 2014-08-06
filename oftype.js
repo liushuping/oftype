@@ -4,12 +4,24 @@ function oftype(val, type) {
 	return type === val;
 
     } else if (type === Number) {
+	if (oftype.primitiveObject) {
+	    return toString.call(val) === '[object Number]';
+	}
+
 	return typeof val === 'number';
 
     } else if (type === String) {
+	if (oftype.primitiveObject) {
+	    return toString.call(val) === '[object String]';
+	}
+
 	return typeof val === 'string';
 
     } else if (type === Boolean) {
+	if (oftype.primitiveObject) {
+	    return toString.call(val) === '[object Boolean]';
+	}
+
 	return typeof val === 'boolean';
 
     } else {
@@ -17,5 +29,8 @@ function oftype(val, type) {
 	       val instanceof type;
     }
 }
+
+oftype.nullAsObject = false;
+oftype.primitiveObject = true;
 
 module.exports = oftype;

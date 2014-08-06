@@ -7,16 +7,19 @@ var config = {
 	     [undefined, Number], 		//false
 	     [undefined, 'ab'], 		//false
 	     [123, Number], 			//true
+	     [new Number(1), Number],		//true
 	     [123, undefined], 			//false
 	     [123, null], 			//false
 	     [123, Boolean], 			//false
 	     [123, 123], 			//false
 	     [123, '123'], 			//false
 	     ['abc', String], 			//true
+	     [new String('a'), String],		//true
 	     ['abc', 'abc'], 			//false
 	     ['abc', Boolean], 			//false
 	     ['abc', Object],	 		//false
 	     [true, Boolean], 			//true
+	     [new Boolean(true), Boolean],	//true
 	     [true, Object], 			//false
 	     [true, Function], 			//false
 	     [null, null], 			//true
@@ -36,9 +39,9 @@ var config = {
 	     [new Obj, Date]],			//false
 
     outputs: [true, false, false, false,
-	      true, false, false, false, false, false,
-	      true, false, false, false,
-	      true, false, false,
+	      true, true, false, false, false, false, false,
+	      true, true, false, false, false,
+	      true, true, false, false,
 	      true, false, false, false, false,
 	      true, 
 	      true,
