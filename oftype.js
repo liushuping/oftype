@@ -1,8 +1,6 @@
 function oftype(val, type) {
-    if (type === undefined ||
-        type === null ||
-	val === undefined ||
-	val === null) {
+    if (type === undefined || type === null ||
+	val === undefined || val === null) {
 	return type === val;
 
     } else if (type === Number) {
