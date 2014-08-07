@@ -3,7 +3,7 @@ oftype
 
 A JavaScript module for checking variable runtime type
 
-[![build status](https://travis-ci.org/liushuping/oftype.svg)](https://travis-ci.org/liushuping/ddt.svg)
+[![build status](https://travis-ci.org/liushuping/oftype.svg)](https://travis-ci.org/liushuping/oftype.svg)
 
 ## Usage
 ```javascript
