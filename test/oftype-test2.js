@@ -1,7 +1,7 @@
 var oftype = require('../oftype');
 var ddt = require('ddt');
 
-var config = {
+ddt.test({
     inputs: [[null, null], 	 	//true
 	     [null, Object]],		//true
 
@@ -16,6 +16,4 @@ var config = {
     before: function() {
 	oftype.nullAsObject = true;
     }
-};
-
-ddt.test(config);
+});

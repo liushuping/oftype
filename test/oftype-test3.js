@@ -1,7 +1,7 @@
 var oftype = require('../oftype');
 var ddt = require('ddt');
 
-var config = {
+ddt.test({
     inputs: [[new Number(1), Number],
 	     [1, Number],
 	     [new String('x'), String],
@@ -20,6 +20,4 @@ var config = {
     before: function() {
 	oftype.primitiveObject = false;
     }
-};
-
-ddt.test(config);
+});
