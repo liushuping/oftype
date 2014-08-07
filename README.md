@@ -3,6 +3,8 @@ oftype
 
 A JavaScript module for checking variable runtime type
 
+[![build status](https://travis-ci.org/liushuping/ddt.svg)](https://travis-ci.org/liushuping/ddt.svg)
+
 ## Usage
 ```javascript
 var oftype = require('oftype');
