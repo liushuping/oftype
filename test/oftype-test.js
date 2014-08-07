@@ -52,9 +52,9 @@ ddt.test({
 	return oftype(input[0], input[1]);
     },
     
-    validate: function(expected, actual) {
-	return expected == actual;
-    },
+    before: function() {
+	oftype.primitiveObject = true;
+    },	
 
     groupName: 'Test group 1'	
 });
