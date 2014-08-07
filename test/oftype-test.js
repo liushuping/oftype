@@ -1,7 +1,7 @@
 var oftype = require('../oftype');
 var ddt = require('ddt');
 
-var config = {
+ddt.test({
     inputs: [[undefined, undefined], 	 	//true
 	     [undefined, null], 		//false
 	     [undefined, Number], 		//false
@@ -57,10 +57,8 @@ var config = {
     },
 
     groupName: 'Test group 1'	
-};
+});
 
 function Obj() {
     this.name = 'ABC';
 }
-
-ddt.test(config);
