@@ -11,12 +11,11 @@ var config = {
 	return oftype(input[0], input[1]);
     },
     
-    validate: function(expected, actual) {
-	return expected == actual;
-    },
+    groupName: 'Test group 2',
 
-    groupName: 'Test group 2'
+    before: function() {
+	oftype.nullAsObject = true;
+    }
 };
 
-oftype.nullAsObject = true;
 ddt.test(config);

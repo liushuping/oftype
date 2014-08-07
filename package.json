@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/liushuping/oftype",
   "devDependencies": {
-    "ddt": "0.0.3"
+    "mocha": "*",
+    "ddt": "0.1.0"
   }
 }
