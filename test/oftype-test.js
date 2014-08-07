@@ -54,6 +54,7 @@ ddt.test({
     
     before: function() {
 	oftype.primitiveObject = true;
+	oftype.nullAsObject = false;
     },	
 
     groupName: 'Test group 1'	
