@@ -61,6 +61,11 @@ oftype(value, type, options);
 
  * `primitiveObject`: treat primitive object as primitive type. for example, testing `new Number(1)` against Number will return `false` when this option is set to `false`; but will return `true` when this option is set to `true`.
 
+Alternatively, to avoid setting the options in every function call, the options could also be set globally:
+`
+oftype.nullAsObject = true;
+oftype.primitiveObject = true;
+```
 ## Test
 Make sure `mocha` is installed globally
 
