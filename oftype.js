@@ -1,27 +1,39 @@
-function oftype(val, type) {
+function oftype(val, type, options) {
+    nullAsObject = oftype.nullAsObject;
+    primitiveObject = oftype.primitiveObject;
+
+    if (options && (options.nullAsObject !== undefined)) {
+	nullAsObject = options.nullAsObject;
+    }
+
+    if (options && (options.primitiveObject !== undefined)) {
+	primitive = options.primitiveObject;
+
+    }
+
     if (type === undefined || val === undefined) {
 	return type === val;
 
     } else if (val === null) {
 	return type === null || 
-	       oftype.nullAsObject && type === Object;
+               nullAsObject && type === Object;
 
     } else if (type === Number) {
-	if (oftype.primitiveObject) {
+	if (primitiveObject) {
 	    return toString.call(val) === '[object Number]';
 	}
 
 	return typeof val === 'number';
 
     } else if (type === String) {
-	if (oftype.primitiveObject) {
+	if (primitiveObject) {
 	    return toString.call(val) === '[object String]';
 	}
 
 	return typeof val === 'string';
 
     } else if (type === Boolean) {
-	if (oftype.primitiveObject) {
+	if (primitiveObject) {
 	    return toString.call(val) === '[object Boolean]';
 	}
 
