@@ -8,7 +8,6 @@ function oftype(val, type, options) {
 
     if (options && (options.primitiveObject !== undefined)) {
 	primitive = options.primitiveObject;
-
     }
 
     if (type === undefined || val === undefined) {
